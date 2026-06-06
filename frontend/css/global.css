@@ -1,0 +1,73 @@
+
+* {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #545454;
+}
+
+.navbar {
+    background: linear-gradient(180deg, #2b29ac, #1b6329);
+    padding-right: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.3);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; 
+    gap: 12px;
+}
+
+.nav-links {
+    display: inline-flex;
+    gap: 100px;
+    list-style: none;
+    align-items: left;
+}
+
+.nav-item {
+    display: inline-block;
+    color: white;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.nav-item-active {
+    display: inline-block;
+    color: #ffbd59;
+    font-size: x-large;
+    position: relative;
+    top: 10px;
+    font-weight: bolder;
+}
+
+.nav-item:hover  {
+    color: red;
+}
+
+footer {
+    background: linear-gradient(180deg, #0b1b3d);
+    padding-right: 90px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}

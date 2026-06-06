@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TIMEZONE</title>
+    <link rel="stylesheet" href="/frontend/css/global.css">
+    <link rel="stylesheet" href="/frontend/css/index.css">
+    <!-- Buscar los iconos en font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css">
+    <!-- Cargar fuentes de las letras desde los servidores de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="/frontend/assets/tierra.svg" style="height: 90px;">
+            <div class="logo-texto">
+                <span style="color: #ffbd59; font-weight: bolder; font-size: 250%; position: relative; top: 5px;">TIME</span><br>
+                <span style="color: #38b6ff; font-weight: bolder; font-size: 238%; position: relative; bottom: 5px;">ZONE</span><span style="color: red; font-weight: bolder; font-size: 150%; position: relative; right: 7px; bottom: 3px;">.com</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a class="nav-item-active" id="INICIO">INICIO<i class="fa-solid fa-house"></i></a></li>
+            <li><a class="nav-item" id="reloj-mund">RELOJ MUNDIAL<i class="fa-solid fa-map"></i></a></li>
+            <li><a class="nav-item" id="alarmas">ALARMAS<i class="fa-solid fa-alarm-clock"></i></a></li>
+        </ul>
+    </nav>
+    <section class="buscar">
+        <div class="caja-buscar">
+            <div class="icon-buscar" id="buscar">
+                <i class="fas fa-search"></i>
+            </div>
+            <input type="text" placeholder="Buscar zona horaria...">
+        </div>
+    </section>
+    <section class="Cities-segmento1">
+        <article class="tarjeta-reloj">
+            <header class="tarjeta-encabezado">
+                <h2>Berlín</h2>
+                <time datetime="20:00">20:00</time>
+            </header>
+            <figure class="tarjeta-imagen">
+                <img src="/frontend/assets/berlin_noche.jpg" alt="Vista panorámica de Berlín" style="object-position: center top;">
+            </figure>
+        </article>
+        <article class="tarjeta-reloj">
+            <header class="tarjeta-encabezado">
+                <h2>Bogotá</h2>
+                <time datetime="20:00">13:00</time>
+            </header>
+            <figure class="tarjeta-imagen">
+                <img src="/frontend/assets/bogota_dia.jpg" alt="Vista panorámica de Bogotá" style="object-position: center bottom;">
+            </figure>
+        </article>
+        <article class="tarjeta-reloj">
+            <header class="tarjeta-encabezado">
+                <h2>Madrid</h2>
+                <time datetime="20:00">20:00</time>
+            </header>
+            <figure class="tarjeta-imagen">
+                <img src="/frontend/assets/madrid_noche.jpg" alt="Vista panorámica de Madrid" style="object-position: center top;">
+            </figure>
+        </article>
+    </section>
+    <section class="Cities-segmento2">
+        <article class="tarjeta-reloj">
+            <header class="tarjeta-encabezado">
+                <h2>Moscú</h2>
+                <time datetime="20:00">21:00</time>
+            </header>
+            <figure class="tarjeta-imagen">
+                <img src="/frontend/assets/moscu_noche.jpg" alt="Vista panorámica de Moscú" style="object-position: center 40%;">
+            </figure>
+        </article>
+        <article class="tarjeta-reloj">
+            <header class="tarjeta-encabezado">
+                <h2>Nueva York</h2>
+                <time datetime="20:00">14:00</time>
+            </header>
+            <figure class="tarjeta-imagen">
+                <img src="/frontend/assets/NuevaYork_dia.jpg" alt="Vista panorámica de Nueva York" style="object-position: center 60%;">
+            </figure>
+        </article>
+        <article class="tarjeta-reloj">
+            <header class="tarjeta-encabezado">
+                <h2>Sydney</h2>
+                <time datetime="20:00">03:00</time>
+            </header>
+            <figure class="tarjeta-imagen">
+                <img src="/frontend/assets/sydney_noche.jpg" alt="Vista panorámica de Sydney" style="object-position: center top;">
+            </figure>
+        </article>
+    </section>
+    <footer>
+        <div>
+            <article class="footer1">
+                <header class="DATOS DE CONTACTO">
+                    <h2 style="color: white; font-weight: bolder;">DATOS DE CONTACTO DEL DESARROLLADOR</h2>
+                    <img class="contacto" src="/frontend/assets/CONTACTO.png" style="height: 150px;">
+                </header>
+            </article>
+        </div>
+        <div>
+            <article class="footer2">
+                <header class="worldmap">
+                    <img class="Foto-final" src="/frontend/assets/FOTOFINAL.jpg" style="height: 200px; padding-left: 190px; padding-top: 20px; padding-bottom: 20px;">
+                </header>
+            </article>
+        </div>
+    </footer>
+    <script src="/frontend/js/animations.js"></script>
+    <script src="/frontend/js/index.js"></script>
+</body>
+</html>

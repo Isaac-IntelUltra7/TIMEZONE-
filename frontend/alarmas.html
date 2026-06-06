@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TIMEZONE - ALARMAS</title>
+    <link rel="stylesheet" href="/frontend/css/global.css">
+    <link rel="stylesheet" href="/frontend/css/alarmas.css">
+    <!-- Buscar los iconos en font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css">
+    <!-- Cargar fuentes de las letras desde los servidores de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="/frontend/assets/tierra.svg" style="height: 90px;">
+            <div class="logo-texto">
+                <span style="color: #ffbd59; font-weight: bolder; font-size: 250%; position: relative; top: 5px;">TIME</span><br>
+                <span style="color: #38b6ff; font-weight: bolder; font-size: 238%; position: relative; bottom: 5px;">ZONE</span><span style="color: red; font-weight: bolder; font-size: 150%; position: relative; right: 7px; bottom: 3px;">.com</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a class="nav-item" id="INICIO">INICIO<i class="fa-solid fa-house"></i></a></li>
+            <li><a class="nav-item" id="reloj-mund">RELOJ MUNDIAL<i class="fa-solid fa-map"></i></a></li>
+            <li><a class="nav-item-active" id="alarmas">ALARMAS<i class="fa-solid fa-alarm-clock"></i></a></li>
+        </ul>
+    </nav>
+    <section class="tempyalarm">
+        <section class="nuevas-alarmas">
+            <section class="alarma-mas" id="alarma-mas">
+                <div class="caja-alarma">
+                    <div class="icon-alarma">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <p class="caja-alarma-texto">Agregar alarma</p>
+                </div>
+            </section>
+            <section class="alarms" id="alarms">
+            </section>
+        </section>
+        <section class="temporizador">
+            <section class="temp">
+                <div class="caja-temp">
+                    <div class="icon-temp">
+                        <i class="fa-solid fa-stopwatch"></i>
+                    </div>
+                    <p class="caja-temp-texto">TEMPORIZADOR</p>
+                </div>
+            </section>
+            <section class="box-timer">
+                <article class="timer">
+                    <figure class="timer">
+                        <time class="time-timer">0:47</time>
+                    </figure>
+                </article>
+            </section>
+            <section class="time-add">
+                <article class="box-timer-add-left">
+                    <figure class="add">
+                        <time class="add-time-timer">+5</time>
+                    </figure>
+                </article>
+                <article class="box-timer-add-center">
+                    <figure class="add">
+                        <time class="add-time-timer">+10</time>
+                    </figure>
+                </article>
+                <article class="box-timer-add-right">
+                    <figure class="add">
+                        <time class="add-time-timer">+15</time>
+                    </figure>
+                </article>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <div>
+            <article class="footer1">
+                <header class="DATOS DE CONTACTO">
+                    <h2 style="color: white; font-weight: bolder;">DATOS DE CONTACTO DEL DESARROLLADOR</h2>
+                    <img class="contacto" src="/frontend/assets/CONTACTO.png" style="height: 150px;">
+                </header>
+            </article>
+        </div>
+        <div>
+            <article class="footer2">
+                <header class="worldmap">
+                    <img class="Foto-final" src="/frontend/assets/FOTOFINAL.jpg" style="height: 200px; padding-left: 190px; padding-top: 20px; padding-bottom: 20px;">
+                </header>
+            </article>
+        </div>
+    </footer>
+    <script src="/frontend/js/animations.js"></script>
+    <script src="/frontend/js/alarmas.js"></script>
+</body>
+</html>

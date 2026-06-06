@@ -1,0 +1,259 @@
+
+.tempyalarm{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: auto;
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 100px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.alarms {
+    display: grid;
+    grid-template-columns: repeat(2, 325px);
+    grid-template-rows: repeat(2, 170px);
+}
+
+.alarma-mas {
+    padding: 20px 20px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+.caja-alarma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2.5px solid #ffffff;
+    border-radius: 50px;
+    padding: 3px 15px 3px 3px;
+    width: 100%;
+    max-width: 200px;
+    height: 30px;
+}
+
+.icon-alarma {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 18px;
+}
+
+.icon-alarma i {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.caja-alarma-texto {
+    background: none;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 15px;
+    padding-left: 12px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.caja-alarma:hover {
+    background-color: #f6ad55;
+    border: 2.5px solid #f6ad55;
+}
+
+.box-alarma {
+    background-color: #737373;
+    margin: 10px 20px 20px 20px;
+    height: 100%;
+    max-height: 150px;
+    width: 100%;
+    max-width: 300px;
+    justify-content: space-between;
+    align-items: left;
+    border-radius: 20px;
+
+}
+
+.alarma {
+    box-sizing: border-box; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.alarma-figure {
+    padding-top: 20px;
+}
+
+.time {
+    font-family: Roboto monospace;
+    font-size: 60px;
+    color: white;
+    font-weight: bolder;
+}
+
+.AM-PM {
+    font-family: Roboto monospace;
+    font-size:larger;
+    color: white;
+    font-weight: bolder;
+}
+
+/* Oculta los elementos internos originales cuando pasas el mouse */
+.alarma:hover .alarma-figure {
+    opacity: 0;
+}
+
+.box-alarma:hover {
+    background: rgb(174, 119, 119);
+    content: attr(data-hover);
+    font-weight: bold;
+    font-size: 15px; 
+    color: white;
+}
+
+.temp {
+    padding: 20px;
+    padding-bottom: 15px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.caja-temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#f7c983, #e59c3a, #da761a);
+    border: 2.5px;
+    border-color: linear-gradient(#f7c983, #e59c3a, #da761a);
+    border-radius: 50px;
+    padding: 3px 15px 3px 3px;
+    width: 100%;
+    max-width: 200px;
+    height: 30px;
+}
+
+.icon-temp {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 18px;
+    color: white;
+    font-size: 15px;
+}
+
+.caja-temp-texto {
+    padding-left: 2px;
+    color: white;
+}
+
+.box-timer {
+    margin-left: 20px;
+    height: 100%;
+    max-height: 300px;
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+    /* Cuando --progreso sea 100% será gris (#6e6e6e), cuando sea 0% irá hacia rojo (#ff4d4d) */
+    background-color: color-mix(in srgb, #2b29ac calc(100% - var(--progreso, 100%)), #6e6e6e);
+    /* Suaviza el cambio de color cada segundo */
+    transition: background-color 0.5s ease;
+}
+
+.timer {
+    box-sizing: border-box;  
+}
+
+.time-timer {
+    font-family: Roboto monospace;
+    font-size: 120px;
+    color: white;
+    font-weight: bolder;
+}
+
+.time-add {
+    display: grid;
+    grid-template-columns: repeat(3, 175px);
+}
+
+.box-timer-add-left {
+    background-color: #ff914d;
+    margin: 10px 20px 20px 20px;
+    height: 100%;
+    max-height: 70px;
+    width: 100%;
+    max-width: 150px;
+    justify-content: space-between;
+    align-items: left;
+    border-radius: 20px;
+}
+
+.box-timer-add-center {
+    background-color: #ff914d;
+    margin: 10px 20px 20px 20px;
+    height: 100%;
+    max-height: 70px;
+    width: 100%;
+    max-width: 150px;
+    justify-content: space-between;
+    align-items: left;
+    border-radius: 20px;
+
+}
+.box-timer-add-right {
+    background-color: #ff914d;
+    margin: 10px 20px 20px 20px;
+    height: 100%;
+    max-height: 70px;
+    width: 100%;
+    max-width: 150px;
+    justify-content: space-between;
+    align-items: left;
+    border-radius: 20px;
+
+}
+
+.timer-add {
+    box-sizing: border-box; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.add {
+    padding-top: 1px;
+    padding-left: 5px;
+}
+
+.add-time-timer {
+    font-family: Tahoma, monospace;
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+.AM-PM {
+    font-family: Roboto monospace;
+    font-size:larger;
+    color: white;
+    font-weight: bolder;
+}

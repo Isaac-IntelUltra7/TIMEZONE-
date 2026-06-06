@@ -1,0 +1,118 @@
+
+/* El nombre de la ciudad en la tarjeta */
+.tarjeta-encabezado h2 {
+  font-weight: 700; /* Peso grueso para resaltar los cortes geométricos */
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-transform: uppercase; /* Opcional: en mayúsculas se ve aún más futurista */
+}
+
+.buscar {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-shadow: inset 0 4px 6px rgba(0,0,0,0.1); /* Sombra interna sutil */
+}
+
+.caja-buscar {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 2.5px solid #ffffff;
+    border-radius: 50px;
+    padding: 3px 15px 3px 3px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.icon-buscar {
+    background-color: #f6ad55;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-buscar i {
+    color: #444444;
+    font-size: 14px;
+}
+
+.caja-buscar input {
+    background: none;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 15px;
+    padding-left: 12px;
+    width: 100%;
+}
+
+.caja-buscar input::placeholder {
+    color: #cccccc;
+}
+
+.Cities-segmento1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Espacio entre tarjetas */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.Cities-segmento2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Espacio entre tarjetas */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 40px;
+}
+
+/* Estilo individual de cada tarjeta */
+.tarjeta-reloj {
+  background-color: #737373; /* Gris de la tarjeta */
+  border-radius: 15px;       /* Bordes redondeados */
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Alineación de la Ciudad y la Hora */
+.tarjeta-encabezado {
+  display: flex;
+  justify-content: space-between; /* Empuja el texto a los extremos */
+  align-items: center;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.tarjeta-encabezado h2 {
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: normal;
+}
+
+.tarjeta-encabezado time {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+/* Contenedor de la imagen */
+.tarjeta-imagen {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 12px; /* Redondeado interno de la foto */
+}
+
+.tarjeta-imagen img {
+  width: 356.67px;
+  height: 150px;       /* Altura fija para que todas se vean iguales */
+  object-fit: cover;   /* Evita que la imagen se deforme al recortarse */
+  display: block;
+}
