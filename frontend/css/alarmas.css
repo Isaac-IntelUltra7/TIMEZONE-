@@ -218,6 +218,7 @@
     background-color: color-mix(in srgb, #2b29ac calc(100% - var(--progreso, 100%)), #6e6e6e);
     /* Suaviza el cambio de color cada segundo */
     transition: background-color 0.5s ease;
+    position: relative;
 }
 
 .timer {
@@ -229,6 +230,72 @@
     font-size: 120px;
     color: white;
     font-weight: bolder;
+}
+
+#temp-buttons {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: transparent;
+    border-radius: 20px;
+}
+
+#play {
+    background: white;
+    padding: 4px;
+    font-size: large;
+}
+
+#pause {
+    background: white;
+    padding: 4px; 
+    font-size: large; 
+}
+
+#stop {
+    background: white;
+    padding: 4px;
+    font-size: large;
+}
+
+#play:focus {
+    background: rgb(3, 145, 3);
+    transition: background-color 0.5s ease;
+    margin-top: 2px;
+    box-shadow: 0px 0px 20px rgb(3, 145, 3);
+}
+
+#play:hover {
+    background: rgb(3, 145, 3);
+    transition: background-color 0.5s ease;
+    box-shadow: 0px 0px 20px white;
+}
+
+#pause:focus {
+    background: rgb(3, 114, 145);
+    transition: background-color 0.5s ease;
+    margin-top: 2px;
+    box-shadow: 0px 0px 20px rgb(3, 114, 145);
+}
+
+#pause:hover {
+    background: rgb(3, 114, 145);
+    transition: background-color 0.5s ease;
+    box-shadow: 0px 0px 20px white;
+}
+
+#stop:focus {
+    background: rgb(132, 3, 20);
+    transition: background-color 0.5s ease;
+    margin-top: 2px;
+    box-shadow: 0px 0px 20px rgb(132, 3, 20);
+}
+
+#stop:hover {
+    background: rgb(132, 3, 20);
+    transition: background-color 0.5s ease;
+    box-shadow: 0px 0px 20px white;
 }
 
 .time-add {

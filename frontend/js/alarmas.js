@@ -123,8 +123,8 @@ const revisarAlarma = setInterval(function() {
 
 
 // Lógica del temporizador (Mantenida intacta)
-let tiempoRestante = 47; 
-let tiempoMaximo = 47; 
+let tiempoRestante = 0; 
+let tiempoMaximo = 0; 
 let intervalo = null;
 
 const sonidoAlarma = new Audio('alarma.m4a');
@@ -135,6 +135,10 @@ const contenedorTimer = document.querySelector(".box-timer");
 const btnMas5 = document.querySelector(".box-timer-add-left");
 const btnMas10 = document.querySelector(".box-timer-add-center");
 const btnMas15 = document.querySelector(".box-timer-add-right");
+
+const buttonIniciar = document.getElementById('play');
+const buttonPausar = document.getElementById('pause');
+const buttonDetener = document.getElementById('stop');
 
 function actualizarColor() {
     if (tiempoMaximo === 0) return;
@@ -173,12 +177,21 @@ function pausarContador() {
     intervalo = null; 
 }
 
-contenedorTimer.addEventListener("click", function() {
+buttonIniciar.addEventListener("click", function() {
+    iniciarContador();
+});
+
+buttonPausar.addEventListener("click", function() {
     if (intervalo === null) {
         if (tiempoRestante > 0) iniciarContador(); 
     } else {
         pausarContador();
     }
+});
+
+buttonDetener.addEventListener("click", function() {
+    tiempoRestante = 0;
+    actualizarPantalla();
 });
 
 btnMas5.addEventListener("click", function() { sumarTiempo(5); });
