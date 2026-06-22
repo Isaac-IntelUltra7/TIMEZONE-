@@ -28,6 +28,35 @@ html, body {
     border-bottom-right-radius: 30px;
 }
 
+.time-word {
+    color: #ffbd59; 
+    font-weight: bolder; 
+    font-size: 250%; 
+    position: relative; 
+    top: 5px;
+}
+
+.zone-word {
+    color: #38b6ff; 
+    font-weight: bolder; 
+    font-size: 238%; 
+    position: relative; 
+    bottom: 5px;
+}
+
+.logo {
+    height: 90px;
+}
+
+.com-word {
+    color: red;
+    font-weight: bolder; 
+    font-size: 150%; 
+    position: relative; 
+    right: 7px; 
+    bottom: 3px;
+}
+
 .logo-container {
     display: flex;
     align-items: center; 
@@ -70,4 +99,29 @@ footer {
     display: flex;
     align-items: left;
     justify-content: left;
+}
+
+.footer-h2 {
+    color: white; 
+    font-weight: bolder;
+}
+
+.contacto {
+    height: 150px;
+}
+
+.Foto-final {
+    height: 200px; 
+    padding-left: 190px; 
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+
+iframe {
+    border:1px solid black; 
+    padding:0; 
+    margin:0; 
+    width: 1000px; 
+    height: 600px; 
+    overflow:visible;
 }

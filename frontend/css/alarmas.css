@@ -22,9 +22,9 @@
     padding: 20px 20px;
     padding-bottom: 15px;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 95%;
 }
 
 .caja-alarma {
@@ -83,6 +83,47 @@
     align-items: left;
     border-radius: 20px;
 
+}
+
+#miHora {
+    background: linear-gradient(180deg, #03c477, #03c4c4); 
+    color: #000000;                /* Texto blanco idéntico al botón superior */
+    font-family: 'Courier New'; /* Tipografía estilo retro */
+    font-size: 1.2rem;
+    letter-spacing: 0px;           /* Separa los guiones para mejor lectura */
+    font-weight: bolder;
+    
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 5px black ; 
+    border-radius: 20px;           /* Bordes redondeados idénticos a "+ AGREGAR ALARMA" */
+    padding: 8px 16px;             /* Espaciado interno cómodo */
+    outline: none;
+    
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+#create {
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    background: linear-gradient(180deg, #04002e, #020130);
+    box-shadow: 0px 0px 5px white;
+    border: 2px solid white
+}
+
+#create:hover {
+    font-size: 1rem;
+}
+
+/* Efecto visual al pasar el cursor o hacer clic */
+#miHora:focus, 
+#miHora:hover {
+    background: linear-gradient(180deg, #03c477, #03c4c4);
+    cursor: pointer;
+    filter: invert(1);             /* Invierte el color del icono negro a blanco */
+    font-size: 1.25rem;
 }
 
 .alarma {

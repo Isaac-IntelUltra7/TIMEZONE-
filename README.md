@@ -3,9 +3,7 @@ La página web ya se encuentra publicada y alojada mediante GitHub Pages
 A continuación se encuentra el enlace:
 https://isaac-intelultra7.github.io/TIMEZONE-/frontend/ 
 
-
 ------- Apartados para el usuario -------
-
 En el apartado de alarmas:
 - Para eliminar una alarma, coloque el mouse sobre esta y de click
 - Para detener o iniciar el temporizador, de click en este

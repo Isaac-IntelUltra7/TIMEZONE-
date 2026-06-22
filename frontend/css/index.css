@@ -56,7 +56,7 @@
     color: #cccccc;
 }
 
-.Cities-segmento1 {
+.cities-segmento1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px; /* Espacio entre tarjetas */
@@ -65,7 +65,7 @@
   padding-bottom: 10px;
 }
 
-.Cities-segmento2 {
+.cities-segmento2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px; /* Espacio entre tarjetas */
