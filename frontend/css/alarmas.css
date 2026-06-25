@@ -6,16 +6,16 @@
     grid-template-rows: auto;
     gap: 30px;
     padding: 20px;
-    margin-bottom: 100px;
-    width: 100%;
-    max-width: 1200px;
+    margin-bottom: 230px;
+    width: 96%;
+    max-width: 980%;
     box-sizing: border-box;
 }
 
 .alarms {
     display: grid;
-    grid-template-columns: repeat(2, 325px);
-    grid-template-rows: repeat(2, 170px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(170px, 1fr));
 }
 
 .alarma-mas {
@@ -207,8 +207,8 @@
 .box-timer {
     margin-left: 20px;
     height: 100%;
-    max-height: 300px;
-    width: 100%;
+    max-height: 330px;
+    width: 95%;
     max-width: 500px;
     justify-content: center;
     align-items: center;
@@ -300,7 +300,9 @@
 
 .time-add {
     display: grid;
-    grid-template-columns: repeat(3, 175px);
+    grid-template-columns: repeat(3, 33%);
+    max-width: 100%;
+    align-items: center;
 }
 
 .box-timer-add-left {
@@ -364,4 +366,19 @@
     font-size:larger;
     color: white;
     font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    .tempyalarm{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 20px;
+        margin-bottom: 100px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
 }

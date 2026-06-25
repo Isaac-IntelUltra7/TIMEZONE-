@@ -14,3 +14,7 @@
     background-color: #737373;
     box-sizing: border-box;
 }
+
+iframe {
+    max-width: 100%;
+}

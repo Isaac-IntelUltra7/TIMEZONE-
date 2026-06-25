@@ -25,6 +25,7 @@
     padding: 3px 15px 3px 3px;
     width: 100%;
     max-width: 450px;
+    box-shadow: 0px 5px 1px black;
 }
 
 .icon-buscar {
@@ -49,7 +50,7 @@
     color: #ffffff;
     font-size: 15px;
     padding-left: 12px;
-    width: 100%;
+    width: 373px;
 }
 
 .caja-buscar input::placeholder {
@@ -58,28 +59,61 @@
 
 .cities-segmento1 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px; /* Espacio entre tarjetas */
-  max-width: 1200px;
+  max-width: 98%;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 96.5%;
+  box-sizing: border-box;
 }
 
-.cities-segmento2 {
+.cities-resultado {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px; /* Espacio entre tarjetas */
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding-top: 5px;
   padding-bottom: 40px;
+  height: auto;          /* Permite que el contenedor crezca libremente */
+  overflow: visible;   
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+#volver {
+  display: none;
+  width: 160px;
+  height: 30px;
+  border: 2px solid black;
+}
+
+#volver:hover {
+  border-radius: 20px;
+  background: linear-gradient(#f7c983, #e59c3a, #da761a);
+  border: 2px inset #da761a;
+  color: white;
+  font-weight: bolder;
 }
 
 /* Estilo individual de cada tarjeta */
 .tarjeta-reloj {
   background-color: #737373; /* Gris de la tarjeta */
   border-radius: 15px;       /* Bordes redondeados */
+  border: 2px solid transparent;
   padding: 15px;
+  box-sizing: border-box;
+  max-width: 386.67;
+  max-height: 218.67;
+  box-shadow: 0px 5px 5px black;
+  flex: 1 1 300px;    /* Crece si hay espacio, pero nunca mide menos de 300px */
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -90,6 +124,8 @@
   align-items: center;
   color: #ffffff;
   margin-bottom: 12px;
+  max-width: 356.67;
+  max-height: 26.67;
 }
 
 .tarjeta-encabezado h2 {
@@ -108,11 +144,60 @@
   margin: 0;
   overflow: hidden;
   border-radius: 12px; /* Redondeado interno de la foto */
+  max-width: 356.67;
+  max-height: 150;
 }
 
 .tarjeta-imagen img {
   width: 356.67px;
   height: 150px;       /* Altura fija para que todas se vean iguales */
   object-fit: cover;   /* Evita que la imagen se deforme al recortarse */
-  display: block;
+  object-position: center center;
+}
+
+/* El contenedor del tiempo principal */
+.reloj-tiempo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    display: inline-flex;
+    align-items: baseline; /* Sienta los segundos y el AM exactamente sobre la misma línea de suelo que los minutos */
+    letter-spacing: -2%;
+}
+
+/* Los segundos corregidos */
+.segundos-pequeños {
+    font-size: 0.65em; /* Un poco más de la mitad para que sea legible */
+    font-weight: 400;
+    color: rgb(238, 185, 13); /* Un gris translúcido sutil para que no compita con la hora principal */
+}
+
+/* El bloque AM / PM corregido */
+.ampm-pequeño {
+    font-size: 1em;
+    font-weight: 700;
+    color: rgb(238, 185, 13); /* Rosa/Magenta neón ciberpunk (Combina genial con el verde) */
+    /* color: #aaaaaa; /* Gris claro sutil si prefieres el diseño blanco */
+    margin-left: 1px; /* Un mini espacio para que no se pegue por completo a los segundos */
+}
+
+@media (max-width: 768px) {
+    .mi-navbar {
+        flex-direction: column;     /* Cambia la fila por una columna vertical */
+        gap: 15px;                  /* Agrega espacio para que los elementos no se peguen */
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .mi-navbar ul, .contenedor-enlaces {
+        flex-direction: row;        /* Mantiene los enlaces en fila o cámbialo a 'column' si son muy largos */
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* Tu barra de búsqueda en móviles */
+    .mi-navbar input[type="text"] {
+        width: 100%;                /* Hace que el buscador se adapte al ancho del celular */
+        max-width: 90%;             /* Deja un pequeño margen estético a los lados */
+    }
 }

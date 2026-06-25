@@ -168,6 +168,7 @@ function iniciarContador() {
                 console.error("El navegador bloqueó el audio hasta que el usuario interactúe:", error);
             });
             console.error("Proceso terminado: tiempo en cero"); 
+            
         }
     }, 1000);
 }
@@ -206,6 +207,14 @@ function sumarTiempo(segundos) {
     actualizarPantalla();
     if (tiempoRestante > 0 && intervalo === null) {
         iniciarContador();
+    }
+}
+
+if (buttonDetener.addEventListener("click") || buttonPausar.addEventListener("click") || buttonIniciar.addEventListener("click") || btnMas5.addEventListener("click") || btnMas10.addEventListener("click") || btnMas15.addEventListener("click") ) {
+    iniciarContador();
+    if (tiempoRestante == 0) {
+        let utterance = new SpeechSynthesisUtterance("El temporizador a llegado a zero. El tiempo a terminado");
+        speechSynthesis.speak(utterance);
     }
 }
 

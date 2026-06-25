@@ -35,80 +35,82 @@
             <div class="icon-buscar" id="buscar">
                 <i class="fas fa-search"></i>
             </div>
-            <input type="text" placeholder="Buscar zona horaria...">
+            <input type="text" placeholder="Buscar zona horaria..." id="searchCity" autocomplete="off">
+            <button id="volver">Borrar búsqueda</button>
         </div>
     </section>
-    <section class="cities-segmento1">
+    <section class="cities-segmento1" id="cities-segmento1">
         <article class="tarjeta-reloj">
             <header class="tarjeta-encabezado">
                 <h2>Berlín</h2>
-                <time datetime="20:00">20:00</time>
+                <time class="reloj-tiempo" data-timezone="Europe/Berlin" datetime="20:00">20:00</time>
             </header>
             <figure class="tarjeta-imagen">
-                <img src="assets/berlin_noche.jpg" alt="Vista panorámica de Berlín" style="object-position: center top;">
+                <img src="assets/berlin_noche.webp" alt="Vista panorámica de Berlín" loading="lazy">
             </figure>
         </article>
         <article class="tarjeta-reloj">
             <header class="tarjeta-encabezado">
                 <h2>Bogotá</h2>
-                <time datetime="20:00">13:00</time>
+                <time class="reloj-tiempo" data-timezone="America/Bogota" datetime="13:00">13:00</time>
             </header>
             <figure class="tarjeta-imagen">
-                <img src="assets/bogota_dia.jpg" alt="Vista panorámica de Bogotá" style="object-position: center bottom;">
+                <img src="assets/bogota_dia.webp" alt="Vista panorámica de Bogotá" loading="lazy">
             </figure>
         </article>
         <article class="tarjeta-reloj">
             <header class="tarjeta-encabezado">
                 <h2>Madrid</h2>
-                <time datetime="20:00">20:00</time>
+                <time class="reloj-tiempo" data-timezone="Europe/Madrid" datetime="20:00">20:00</time>
             </header>
             <figure class="tarjeta-imagen">
-                <img src="assets/madrid_noche.jpg" alt="Vista panorámica de Madrid" style="object-position: center top;">
+                <img src="assets/madrid_noche.webp" alt="Vista panorámica de Madrid" loading="lazy">
             </figure>
         </article>
-    </section>
-    <section class="cities-segmento2">
         <article class="tarjeta-reloj">
             <header class="tarjeta-encabezado">
                 <h2>Moscú</h2>
-                <time datetime="20:00">21:00</time>
+                <time class="reloj-tiempo" data-timezone="Europe/Moscow" datetime="20:00">21:00</time>
             </header>
             <figure class="tarjeta-imagen">
-                <img src="assets/moscu_noche.jpg" alt="Vista panorámica de Moscú" style="object-position: center 40%;">
+                <img src="assets/moscu_noche.webp" alt="Vista panorámica de Moscú" loading="lazy">
             </figure>
         </article>
         <article class="tarjeta-reloj">
             <header class="tarjeta-encabezado">
                 <h2>Nueva York</h2>
-                <time datetime="20:00">14:00</time>
+                <time class="reloj-tiempo" data-timezone="America/New_York" datetime="20:00">14:00</time>
             </header>
             <figure class="tarjeta-imagen">
-                <img src="assets/NuevaYork_dia.jpg" alt="Vista panorámica de Nueva York" style="object-position: center 60%;">
+                <img src="assets/NuevaYork_dia.webp" alt="Vista panorámica de Nueva York" loading="lazy">
             </figure>
         </article>
         <article class="tarjeta-reloj">
             <header class="tarjeta-encabezado">
                 <h2>Sydney</h2>
-                <time datetime="20:00">03:00</time>
+                <time class="reloj-tiempo" data-timezone="Australia/Sydney" datetime="20:00">03:00</time>
             </header>
             <figure class="tarjeta-imagen">
-                <img src="assets/sydney_noche.jpg" alt="Vista panorámica de Sydney" style="object-position: center top;">
+                <img src="assets/sydney_noche.webp" alt="Vista panorámica de Sydney" loading="lazy">
             </figure>
         </article>
+    </section>
+    <section class="cities-resultado" id="cities-resultado">    
+        
     </section>
     <footer>
         <div>
             <article class="footer1">
                 <header class="datos-contacto">
                     <h2 class="footer-h2">DATOS DE CONTACTO DEL DESARROLLADOR</h2>
-                    <img class="contacto" src="assets/CONTACTO.png">
+                    <img class="contacto" src="assets/CONTACTO.png" loading="lazy">
                 </header>
             </article>
         </div>
         <div>
             <article class="footer2">
                 <header class="worldmap">
-                    <img class="Foto-final" src="assets/FOTOFINAL.jpg">
+                    <img class="Foto-final" src="assets/FOTOFINAL.jpg" loading="lazy">
                 </header>
             </article>
         </div>
